@@ -68,9 +68,9 @@ a:hover {
     gap: 40px;
 }
 
-.menu_header-sous_menu {
+/* .menu_header-sous_menu {
     display: none;
-}
+} */
 
 .menu_burger_icon > svg {
     width: 20px;
