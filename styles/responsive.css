@@ -12,6 +12,11 @@
 }
 
 @media (min-width: 900px) { /* format ordi */
+    /* ----GENERAL---- */
+    a:hover {
+        border-bottom: 2px solid purple;
+    }
+
     /* ----HEADER---- */
     .logo_nav {
         padding: 20px 40px;

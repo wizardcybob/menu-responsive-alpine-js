@@ -13,10 +13,6 @@ a {
     color: inherit;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 
 /* ----HEADER---- */
 .logo_nav {
@@ -39,7 +35,6 @@ a:hover {
 .menu_header > ul {
     display: flex;
     align-items: center;
-    gap: 40px;
 }
 
 .menu_burger_icon > svg {
@@ -67,10 +62,33 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: lightgray;
+    background-color: rgb(208, 145, 208);
     height: 100%;
     width: 100%;
     overflow-y: scroll;
+}
+
+.header_mobile_open li.menu_header-item_parent {
+    width: 100%;
+}
+
+.header_mobile_open li.menu_header-item_parent:hover {
+    background-color: purple;
+}
+
+.header_mobile_open li.menu_header-item_parent a {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.header_mobile_open .menu_header-sous_menu li {
+    background-color: rgb(216, 185, 216);
+}
+
+.header_mobile_open .menu_header-sous_menu li:hover {
+    background-color: purple;
 }
 
 /* bannière */

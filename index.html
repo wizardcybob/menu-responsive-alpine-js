@@ -20,8 +20,8 @@
             <!-- MENU HEADER-->
             <nav class="menu_header">
                 <ul x-data="{ openSousMenuItem2: false, openSousMenuItem3: false, openSousMenuItem4: false }">
-                    <li><a href="#">Accueil</a></li>
-                    <li x-on:click="openSousMenuItem2 = ! openSousMenuItem2">
+                    <li class="menu_header-item_parent"><a href="#">Accueil</a></li>
+                    <li class="menu_header-item_parent" x-on:click="openSousMenuItem2 = ! openSousMenuItem2">
                         <a href="#">Item 2</a>
                         <ul class="menu_header-sous_menu" x-show="openSousMenuItem2">
                             <li><a href="#">Sous-Item 2.1</a></li>
@@ -30,7 +30,7 @@
                             <li><a href="#">Sous-Item 2.4</a></li>
                         </ul>
                     </li>
-                    <li x-on:click="openSousMenuItem3 = ! openSousMenuItem3">
+                    <li class="menu_header-item_parent" x-on:click="openSousMenuItem3 = ! openSousMenuItem3">
                         <a href="#">Item 3</a>
                         <ul class="menu_header-sous_menu" x-show="openSousMenuItem3">
                             <li><a href="#">Sous-Item 3.1</a></li>
@@ -39,7 +39,7 @@
                             <li><a href="#">Sous-Item 3.4</a></li>
                         </ul>
                     </li>
-                    <li x-on:click="openSousMenuItem4 = ! openSousMenuItem4">
+                    <li class="menu_header-item_parent" x-on:click="openSousMenuItem4 = ! openSousMenuItem4">
                         <a href="#">Item 4</a>
                         <ul class="menu_header-sous_menu" x-show="openSousMenuItem4">
                             <li><a href="#">Sous-Item 4.1</a></li>
@@ -48,7 +48,7 @@
                             <li><a href="#">Sous-Item 4.4</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="menu_header-item_parent"><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <!-- MENU BURGER -->
