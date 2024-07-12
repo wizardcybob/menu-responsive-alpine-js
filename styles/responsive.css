@@ -17,6 +17,14 @@
         padding: 20px 40px;
     }
 
+    .menu_header {
+        display: block;
+    }
+
+    .menu_burger_icon {
+        display: none;
+    }
+
     /* MAIN */
     main {
         padding: 40px 80px;
