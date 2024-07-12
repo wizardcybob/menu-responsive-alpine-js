@@ -1,10 +1,10 @@
 @media (min-width: 600px) { /* format tablette */
-    /* MAIN */
+    /* ----MAIN---- */
     main {
         padding: 40px 60px;
     }
 
-    /* FOOTER */
+    /* ----FOOTER---- */
     footer {
         padding: 40px 60px;
         background-color: green;
@@ -12,7 +12,7 @@
 }
 
 @media (min-width: 900px) { /* format ordi */
-    /* HEADER */
+    /* ----HEADER---- */
     .logo_nav {
         padding: 20px 40px;
     }
@@ -25,12 +25,12 @@
         display: none;
     }
 
-    /* MAIN */
+    /* ----MAIN---- */
     main {
         padding: 40px 80px;
     }
 
-    /* FOOTER */
+    /* ----FOOTER---- */
     footer {
         padding: 40px 80px;
         background-color: red;

@@ -1,4 +1,4 @@
-/* GENERAL */
+/* ----GENERAL---- */
 * {
     padding: 0;
     margin: 0;
@@ -18,7 +18,7 @@ a:hover {
 }
 
 
-/* HEADER */
+/* ----HEADER---- */
 .logo_nav {
     padding: 20px;
     display: flex;
@@ -36,6 +36,17 @@ a:hover {
     display: none;
 }
 
+.menu_header > ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu_burger_icon > svg {
+    width: 20px;
+}
+
+/* when menu mobile is open */
 .header_mobile_open {
     overflow: hidden;
 }
@@ -62,20 +73,7 @@ a:hover {
     overflow-y: scroll;
 }
 
-.menu_header > ul {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-/* .menu_header-sous_menu {
-    display: none;
-} */
-
-.menu_burger_icon > svg {
-    width: 20px;
-}
-
+/* bannière */
 .banner {
     height: 600px;
     background-color: grey;
@@ -85,13 +83,13 @@ a:hover {
 }
 
 
-/* MAIN */
+/* ----MAIN---- */
 main {
     padding: 40px;
 }
 
 
-/* FOOTER */
+/* ----FOOTER---- */
 footer {
     padding: 40px;
     background-color: black;
