@@ -23,7 +23,7 @@
                     <li class="menu_header-item_parent"><a href="#">Accueil</a></li>
                     <li class="menu_header-item_parent" x-on:click="openSousMenuItem2 = ! openSousMenuItem2">
                         <a href="#">Item 2</a>
-                        <ul class="menu_header-sous_menu" x-show="openSousMenuItem2">
+                        <ul class="menu_header-sous_menu" x-show="openSousMenuItem2" x-transition.duration.300ms>
                             <li><a href="#">Sous-Item 2.1</a></li>
                             <li><a href="#">Sous-Item 2.2</a></li>
                             <li><a href="#">Sous-Item 2.3</a></li>
@@ -32,7 +32,7 @@
                     </li>
                     <li class="menu_header-item_parent" x-on:click="openSousMenuItem3 = ! openSousMenuItem3">
                         <a href="#">Item 3</a>
-                        <ul class="menu_header-sous_menu" x-show="openSousMenuItem3">
+                        <ul class="menu_header-sous_menu" x-show="openSousMenuItem3" x-transition.duration.300ms>
                             <li><a href="#">Sous-Item 3.1</a></li>
                             <li><a href="#">Sous-Item 3.2</a></li>
                             <li><a href="#">Sous-Item 3.3</a></li>
@@ -41,7 +41,7 @@
                     </li>
                     <li class="menu_header-item_parent" x-on:click="openSousMenuItem4 = ! openSousMenuItem4">
                         <a href="#">Item 4</a>
-                        <ul class="menu_header-sous_menu" x-show="openSousMenuItem4">
+                        <ul class="menu_header-sous_menu" x-show="openSousMenuItem4" x-transition.duration.300ms>
                             <li><a href="#">Sous-Item 4.1</a></li>
                             <li><a href="#">Sous-Item 4.2</a></li>
                             <li><a href="#">Sous-Item 4.3</a></li>
