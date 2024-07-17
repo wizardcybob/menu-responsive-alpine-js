@@ -88,6 +88,10 @@ header .logo {
 
 .header_mobile_open li.menu_header-item_parent > a {
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     /* border-bottom: 4px solid transparent; */
 }
 
@@ -95,6 +99,11 @@ header .logo {
     background-color: purple;
     color: white;
     /* border-bottom: 4px solid purple; */
+}
+
+.header_mobile_open li.menu_header-item_parent > a > svg {
+    width: 16px;
+    margin-top: 2px;
 }
 
 .header_mobile_open .menu_header-sous_menu li {
@@ -160,15 +169,24 @@ footer .logo {
     text-align: center;
 }
 
-.menu_footer > ul > li.menu_footer-item_parent > p {
+.menu_footer > ul > li.menu_footer-item_parent > div {
     cursor: pointer;
     font-weight: bold;
     padding: 10px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     /* border-bottom: 2px solid transparent; */
 }
 
-/* .menu_footer > ul > li.menu_footer-item_parent:hover > p {
+.menu_footer > ul > li.menu_footer-item_parent > div > svg {
+    width: 16px;
+    margin-top: 2px;
+}
+
+/* .menu_footer > ul > li.menu_footer-item_parent:hover > div {
     color: grey;
     border-bottom: 2px solid grey !important;
 } */
