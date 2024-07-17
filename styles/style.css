@@ -124,7 +124,7 @@ main {
 
 /* ----FOOTER---- */
 footer {
-    padding: 20px;
+    padding: 20px 0;
     background-color: black;
     color: white;
     display: flex;
@@ -150,27 +150,31 @@ footer .logo {
     max-width: 230px;
 }
 
+.menu_footer {
+    width: 100%;
+}
+
 .menu_footer > ul {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.menu_footer > ul > li.menu_footer-item_parent a {
+.menu_footer > ul > li.menu_footer-item_parent > p {
+    cursor: pointer;
     font-weight: bold;
-    display: block;
     padding: 10px;
-    /* border-bottom: 2px solid transparent; */
     font-size: 20px;
+    /* border-bottom: 2px solid transparent; */
 }
 
-/* li.menu_footer-item_parent:hover > a {
+/* .menu_footer > ul > li.menu_footer-item_parent:hover > p {
     color: grey;
     border-bottom: 2px solid grey !important;
 } */
 
-.menu_footer-sous_menu {
-    display: none;
+.menu_footer > ul > li.menu_footer-item_parent > ul > li {
+    padding: 10px;
 }
 
 footer > p {
