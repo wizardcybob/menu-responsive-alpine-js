@@ -104,6 +104,11 @@ header .logo {
 .header_mobile_open li.menu_header-item_parent > a > svg {
     width: 16px;
     margin-top: 2px;
+    transition: transform 0.3s ease;
+}
+
+.header_mobile_open li.menu_header-item_parent > a > svg.svg-rotate-180 {
+    transform: rotate(180deg);
 }
 
 .header_mobile_open .menu_header-sous_menu li {

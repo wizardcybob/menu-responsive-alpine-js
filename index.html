@@ -24,7 +24,7 @@
                     <li class="menu_header-item_parent" x-on:click="openHeaderSousMenuItem2 = ! openHeaderSousMenuItem2">
                         <a href="#">
                             <p>Item 2</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
+                            <svg :class="{ 'svg-rotate-180': openHeaderSousMenuItem2 }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
                         </a>
                         <ul class="menu_header-sous_menu" x-show="openHeaderSousMenuItem2" x-transition.duration.300ms>
                             <li><a href="#">Sous-Item 2.1</a></li>
@@ -36,7 +36,7 @@
                     <li class="menu_header-item_parent" x-on:click="openHeaderSousMenuItem3 = ! openHeaderSousMenuItem3">
                         <a href="#">
                             <p>Item 3</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
+                            <svg :class="{ 'svg-rotate-180': openHeaderSousMenuItem3 }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
                         </a>
                         <ul class="menu_header-sous_menu" x-show="openHeaderSousMenuItem3" x-transition.duration.300ms>
                             <li><a href="#">Sous-Item 3.1</a></li>
@@ -48,7 +48,7 @@
                     <li class="menu_header-item_parent" x-on:click="openHeaderSousMenuItem4 = ! openHeaderSousMenuItem4">
                         <a href="#">
                             <p>Item 4</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
+                            <svg :class="{ 'svg-rotate-180': openHeaderSousMenuItem4 }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
                         </a>
                         <ul class="menu_header-sous_menu" x-show="openHeaderSousMenuItem4" x-transition.duration.300ms>
                             <li><a href="#">Sous-Item 4.1</a></li>
