@@ -181,17 +181,26 @@ footer .logo {
     /* border-bottom: 2px solid transparent; */
 }
 
-.menu_footer > ul > li.menu_footer-item_parent > div > svg {
-    width: 16px;
-    margin-top: 2px;
-}
-
 /* .menu_footer > ul > li.menu_footer-item_parent:hover > div {
     color: grey;
     border-bottom: 2px solid grey !important;
 } */
 
-.menu_footer > ul > li.menu_footer-item_parent > ul > li {
+.menu_footer > ul > li.menu_footer-item_parent > div > svg {
+    width: 16px;
+    margin-top: 2px;
+    transition: transform 0.3s ease;
+}
+
+.menu_footer > ul > li.menu_footer-item_parent > div > svg.svg-rotate-180 {
+    transform: rotate(180deg);
+}
+
+.menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu {
+    background-color: #1b1b1b;
+}
+
+.menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu > li {
     padding: 10px;
 }
 

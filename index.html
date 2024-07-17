@@ -145,60 +145,75 @@
             <!-- MENU FOOTER -->
             <nav class="menu_footer"> <!--s'inspirer du site d'indépendance royale-->
                 <ul>
-                    <li class="menu_footer-item_parent">
-                        <div>
+                    <!-- MENU FOOTER - ITEM 1 -->
+                    <li class="menu_footer-item_parent" x-data="{ openMenuFooter: window.innerWidth > 599, init() { this.updateMenuState(); window.addEventListener('resize', () => this.updateMenuState()) }, updateMenuState() { this.openMenuFooter = window.innerWidth > 599 } }">
+                        <div x-on:click="window.innerWidth <= 599 ? openMenuFooter = !openMenuFooter : null">
                             <p>Item 1</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
+                            <svg :class="{ 'svg-rotate-180': openMenuFooter }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> 
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> 
+                            </svg>
                         </div>
-                        <ul class="menu_footer-sous_menu">
+                        <ul class="menu_footer-sous_menu" x-show="openMenuFooter">
                             <li><a href="#">Sous-Item 1.1</a></li>
                             <li><a href="#">Sous-Item 1.2</a></li>
                             <li><a href="#">Sous-Item 1.3</a></li>
                             <li><a href="#">Sous-Item 1.4</a></li>
                         </ul>
                     </li>
-                    <li class="menu_footer-item_parent">
-                        <div>
+                    <!-- MENU FOOTER - ITEM 2 -->
+                    <li class="menu_footer-item_parent" x-data="{ openMenuFooter: window.innerWidth > 599, init() { this.updateMenuState(); window.addEventListener('resize', () => this.updateMenuState()) }, updateMenuState() { this.openMenuFooter = window.innerWidth > 599 } }">
+                        <div x-on:click="window.innerWidth <= 599 ? openMenuFooter = !openMenuFooter : null">
                             <p>Item 2</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
+                            <svg :class="{ 'svg-rotate-180': openMenuFooter }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> 
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> 
+                            </svg>
                         </div>
-                        <ul class="menu_footer-sous_menu">
+                        <ul class="menu_footer-sous_menu" x-show="openMenuFooter">
                             <li><a href="#">Sous-Item 2.1</a></li>
                             <li><a href="#">Sous-Item 2.2</a></li>
                             <li><a href="#">Sous-Item 2.3</a></li>
                             <li><a href="#">Sous-Item 2.4</a></li>
                         </ul>
                     </li>
-                    <li class="menu_footer-item_parent">
-                        <div>
+                    <!-- MENU FOOTER - ITEM 3 -->
+                    <li class="menu_footer-item_parent" x-data="{ openMenuFooter: window.innerWidth > 599, init() { this.updateMenuState(); window.addEventListener('resize', () => this.updateMenuState()) }, updateMenuState() { this.openMenuFooter = window.innerWidth > 599 } }">
+                        <div x-on:click="window.innerWidth <= 599 ? openMenuFooter = !openMenuFooter : null">
                             <p>Item 3</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
+                            <svg :class="{ 'svg-rotate-180': openMenuFooter }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> 
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> 
+                            </svg>
                         </div>
-                        <ul class="menu_footer-sous_menu">
+                        <ul class="menu_footer-sous_menu" x-show="openMenuFooter">
                             <li><a href="#">Sous-Item 3.1</a></li>
                             <li><a href="#">Sous-Item 3.2</a></li>
                             <li><a href="#">Sous-Item 3.3</a></li>
                             <li><a href="#">Sous-Item 3.4</a></li>
                         </ul>
                     </li>
-                    <li class="menu_footer-item_parent">
-                        <div>
+                    <!-- MENU FOOTER - ITEM 4 -->
+                    <li class="menu_footer-item_parent" x-data="{ openMenuFooter: window.innerWidth > 599, init() { this.updateMenuState(); window.addEventListener('resize', () => this.updateMenuState()) }, updateMenuState() { this.openMenuFooter = window.innerWidth > 599 } }">
+                        <div x-on:click="window.innerWidth <= 599 ? openMenuFooter = !openMenuFooter : null">
                             <p>Item 4</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
+                            <svg :class="{ 'svg-rotate-180': openMenuFooter }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> 
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> 
+                            </svg>
                         </div>
-                        <ul class="menu_footer-sous_menu">
+                        <ul class="menu_footer-sous_menu" x-show="openMenuFooter">
                             <li><a href="#">Sous-Item 4.1</a></li>
                             <li><a href="#">Sous-Item 4.2</a></li>
                             <li><a href="#">Sous-Item 4.3</a></li>
                             <li><a href="#">Sous-Item 4.4</a></li>
                         </ul>
                     </li>
-                    <li class="menu_footer-item_parent">
-                        <div>
+                    <!-- MENU FOOTER - ITEM 5 -->
+                    <li class="menu_footer-item_parent" x-data="{ openMenuFooter: window.innerWidth > 599, init() { this.updateMenuState(); window.addEventListener('resize', () => this.updateMenuState()) }, updateMenuState() { this.openMenuFooter = window.innerWidth > 599 } }">
+                        <div x-on:click="window.innerWidth <= 599 ? openMenuFooter = !openMenuFooter : null">
                             <p>Item 5</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
+                            <svg :class="{ 'svg-rotate-180': openMenuFooter }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> 
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> 
+                            </svg>
                         </div>
-                        <ul class="menu_footer-sous_menu">
+                        <ul class="menu_footer-sous_menu" x-show="openMenuFooter">
                             <li><a href="#">Sous-Item 5.1</a></li>
                             <li><a href="#">Sous-Item 5.2</a></li>
                             <li><a href="#">Sous-Item 5.3</a></li>

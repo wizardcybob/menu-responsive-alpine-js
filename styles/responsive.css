@@ -20,6 +20,14 @@
     .menu_footer li.menu_footer-item_parent {
         width: calc((100% - 40px) / 3);
     }
+
+    .menu_footer > ul > li.menu_footer-item_parent > div > svg {
+        display: none;
+    }
+
+    .menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu {
+        background-color: transparent;
+    }
 }
 
 @media (min-width: 900px) { /* format ordi */
