@@ -7,7 +7,6 @@
     /* ----FOOTER---- */
     footer {
         padding: 40px 60px;
-        background-color: green;
     }
 
     .menu_footer > ul {
@@ -28,20 +27,62 @@
     .menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu {
         background-color: transparent;
     }
+
+    .menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu > li a {
+        padding: 4px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu > li a:hover {
+        text-decoration: underline;
+        background-color: transparent;
+    }
 }
 
 @media (min-width: 900px) { /* format ordi */
-    /* ----GENERAL---- */
-    a:hover {
-        border-bottom: 2px solid purple;
-    }
-
     /* ----HEADER---- */
     .logo_nav {
         padding: 20px 40px;
     }
 
     .menu_header {
+        display: block;
+    }
+
+    .menu_header > ul {
+        gap: 20px;
+    }
+
+    nav.menu_footer {
+        max-width: 550px;
+    }
+
+    .menu_footer > ul {
+        width: 100%;
+    }
+
+    .menu_footer li.menu_footer-item_parent {
+        width: 100%;
+    }
+
+    .menu_header-item_parent > div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu_header-sous_menu {
+        position: absolute;
+        background-color: aquamarine;
+    }
+
+    .menu_header-sous_menu > li:hover {
+        background-color: rgb(86, 200, 162);
+    }
+
+    .menu_header-sous_menu li a {
+        padding: 10px;
         display: block;
     }
 
@@ -57,27 +98,48 @@
     /* ----FOOTER---- */
     footer {
         padding: 40px 80px;
-        background-color: red;
     }
 
     .content_footer {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        gap: 60px;
     }
 
     .infos {
         text-align: start;
+        gap: 14px;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
     }
 
     .menu_footer > ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 40px 20px;
         text-align: start;
     }
 
-    .menu_footer-sous_menu {
-        display: block;
+    .menu_footer > ul > li.menu_footer-item_parent > div {
+        padding: 0;
+        justify-content: start;
+    }
+
+    .menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu {
+        margin-top: 10px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu > li a {
+        padding: 0;
+        margin: 0;
     }
 }

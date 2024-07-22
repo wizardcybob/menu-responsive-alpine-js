@@ -37,6 +37,17 @@ header .logo {
     align-items: center;
 }
 
+.menu_header > ul > li.menu_header-item_parent > div > svg {
+    width: 16px;
+    margin-top: 2px;
+    transition: transform 0.3s ease;
+}
+
+.menu_header > ul > li.menu_header-item_parent > div > svg.svg-rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* menu burger */
 .menu_burger_icon {
     padding: 10px;
     cursor: pointer;
@@ -80,12 +91,15 @@ header .logo {
     width: 100%;
 }
 
+.header_mobile_open li.menu_header-item_parent div,
 .header_mobile_open li.menu_header-item_parent a {
+    cursor: pointer;
     text-align: center;
     display: block;
     padding: 10px;
 }
 
+.header_mobile_open li.menu_header-item_parent > div,
 .header_mobile_open li.menu_header-item_parent > a {
     font-weight: bold;
     display: flex;
@@ -95,20 +109,15 @@ header .logo {
     /* border-bottom: 4px solid transparent; */
 }
 
+.header_mobile_open li.menu_header-item_parent:hover > div,
 .header_mobile_open li.menu_header-item_parent:hover > a {
     background-color: purple;
     color: white;
     /* border-bottom: 4px solid purple; */
 }
 
-.header_mobile_open li.menu_header-item_parent > a > svg {
-    width: 16px;
-    margin-top: 2px;
-    transition: transform 0.3s ease;
-}
-
-.header_mobile_open li.menu_header-item_parent > a > svg.svg-rotate-180 {
-    transform: rotate(180deg);
+.header_mobile_open li.menu_header-item_parent > div > p {
+    font-weight: bold;
 }
 
 .header_mobile_open .menu_header-sous_menu li {
@@ -153,15 +162,22 @@ footer {
     gap: 40px;
 }
 
-.infos {
+.infos_logo {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 40px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 footer .logo {
     max-width: 230px;
+    filter: invert(1);
 }
 
 .menu_footer {
@@ -205,10 +221,19 @@ footer .logo {
     background-color: #1b1b1b;
 }
 
-.menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu > li {
+.menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu > li a {
+    cursor: pointer;
+    width: 100%;
+    display: block;
     padding: 10px;
+    font-size: 14px;
+}
+
+.menu_footer > ul > li.menu_footer-item_parent > ul.menu_footer-sous_menu > li:hover a {
+    background-color: #151515;
 }
 
 footer > p {
     text-align: center;
+    font-size: 12px;
 }

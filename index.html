@@ -22,10 +22,10 @@
                 <ul x-data="{ openHeaderSousMenuItem2: false, openHeaderSousMenuItem3: false, openHeaderSousMenuItem4: false }">
                     <li class="menu_header-item_parent"><a href="#">Accueil</a></li>
                     <li class="menu_header-item_parent" x-on:click="openHeaderSousMenuItem2 = ! openHeaderSousMenuItem2">
-                        <a href="#">
+                        <div>
                             <p>Item 2</p>
                             <svg :class="{ 'svg-rotate-180': openHeaderSousMenuItem2 }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
-                        </a>
+                        </div>
                         <ul class="menu_header-sous_menu" x-show="openHeaderSousMenuItem2" x-transition.duration.300ms>
                             <li><a href="#">Sous-Item 2.1</a></li>
                             <li><a href="#">Sous-Item 2.2</a></li>
@@ -34,10 +34,10 @@
                         </ul>
                     </li>
                     <li class="menu_header-item_parent" x-on:click="openHeaderSousMenuItem3 = ! openHeaderSousMenuItem3">
-                        <a href="#">
+                        <div>
                             <p>Item 3</p>
                             <svg :class="{ 'svg-rotate-180': openHeaderSousMenuItem3 }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
-                        </a>
+                        </div>
                         <ul class="menu_header-sous_menu" x-show="openHeaderSousMenuItem3" x-transition.duration.300ms>
                             <li><a href="#">Sous-Item 3.1</a></li>
                             <li><a href="#">Sous-Item 3.2</a></li>
@@ -46,10 +46,10 @@
                         </ul>
                     </li>
                     <li class="menu_header-item_parent" x-on:click="openHeaderSousMenuItem4 = ! openHeaderSousMenuItem4">
-                        <a href="#">
+                        <div>
                             <p>Item 4</p>
                             <svg :class="{ 'svg-rotate-180': openHeaderSousMenuItem4 }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path> </svg>
-                        </a>
+                        </div>
                         <ul class="menu_header-sous_menu" x-show="openHeaderSousMenuItem4" x-transition.duration.300ms>
                             <li><a href="#">Sous-Item 4.1</a></li>
                             <li><a href="#">Sous-Item 4.2</a></li>
@@ -136,11 +136,13 @@
 
     <footer>
         <div class="content_footer">
-            <div class="infos">
+            <div class="infos_logo">
                 <img class="logo" src="./images/logo.png" alt="logo site" />
-                <p>Nom de la marque</p>
-                <p>Numéro de téléphone</p>
-                <p>Adresse</p>
+                <div class="infos">
+                    <p>Nom de la marque</p>
+                    <p>Numéro de téléphone</p>
+                    <p>Adresse</p>
+                </div>
             </div>
             <!-- MENU FOOTER -->
             <nav class="menu_footer"> <!--s'inspirer du site d'indépendance royale-->
