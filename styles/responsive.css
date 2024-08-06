@@ -54,16 +54,9 @@
         gap: 20px;
     }
 
-    nav.menu_footer {
-        max-width: 550px;
-    }
-
-    .menu_footer > ul {
-        width: 100%;
-    }
-
-    .menu_footer li.menu_footer-item_parent {
-        width: 100%;
+    .menu_header-item_parent {
+        padding: 4px 6px;
+        cursor: pointer;
     }
 
     .menu_header-item_parent > div {
@@ -73,8 +66,12 @@
     }
 
     .menu_header-sous_menu {
-        position: absolute;
         background-color: aquamarine;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        text-align: center;
     }
 
     .menu_header-sous_menu > li:hover {
@@ -118,11 +115,20 @@
         gap: 14px;
     }
 
+    nav.menu_footer {
+        max-width: 550px;
+    }
+
     .menu_footer > ul {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px 20px;
         text-align: start;
+    }
+    
+    .menu_footer li.menu_footer-item_parent {
+        width: 100%;
     }
 
     .menu_footer > ul > li.menu_footer-item_parent > div {
